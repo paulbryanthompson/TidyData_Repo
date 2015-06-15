@@ -14,11 +14,11 @@ library(reshape2)
 
 ## create a directory called "C:/Coursera/TidyDataProject/"
 ## download the zip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-## and extract the contents to the TidyDataProject directory.
-## a new directory called "UCI HAR Dataset" will be created.
+## and extract the contents of the zip file to the C: root directory.
+## a new directory will be created called "UCI HAR Dataset".  This will become the working directory.
 ## this will become the working directory.
 
-setwd("C:/Coursera/TidyDataProject/UCI HAR Dataset/")
+setwd("C:/UCI HAR Dataset/")
   
 ## create dataframes from the various tables
 
@@ -30,13 +30,12 @@ df_train_subject <- read.table("train/subject_train.txt", header = FALSE, sep = 
 df_test <- read.table("test/X_test.txt", header = FALSE, sep = "")
 df_test_act <- read.table("test/y_test.txt", header = FALSE, sep = "")
 df_test_subject <- read.table("test/subject_test.txt", header = FALSE, sep = "")
-##head(df_xtrain)
 
 ## remove strange characters from column names in "features.txt" table to improve ease of use for analysis
 ## this will create variable names that are syntactically valid and do not conflict with R processing.
 ## you could use make.names but I chose to have more control over the resulting column names by using sub.
 
-vColNames <- as.vector(df_features[,2])
+vColNames <- as.vector(df_features[,2]) ## take the second column of the features.txt table and create character vectors
 vBetterColNames <- sub("(", "", vColNames, fixed = TRUE)
 vBetterColNames <- sub(")", "", vBetterColNames, fixed = TRUE)
 vBetterColNames <- sub("-", "", vBetterColNames, fixed = TRUE)
@@ -50,9 +49,9 @@ vBetterColNames <- sub("-", "", vBetterColNames, fixed = FALSE)
 vBetterColNames <- sub(",", "_", vBetterColNames, fixed = FALSE)
 vBetterColNames <- sub("_", "", vBetterColNames, fixed = FALSE)
 
-## add more appropriate column names to train, test
-## rename coumns in activtity, subject, and activity labels data frames prior to cbinding the sbjects
-## this is easier because the column numbers are identical.
+## add more syntactically valid column names to train, test
+## rename columns in the activtity, subject, and activity labels data frames prior to cbinding 
+## the objects together
 
 colnames(df_train) <- vBetterColNames
 colnames(df_test) <- vBetterColNames
