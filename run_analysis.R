@@ -2,10 +2,12 @@
 
 ##You should create one R script called run_analysis.R that does the following. 
 ##1.Merges the training and the test sets to create one data set.
-##2.Extracts only the measurements on the mean and standard deviation for each measurement. 
-##3.Uses descriptive activity names to name the activities in the data set
+##2.Extracts only the measurements on the mean and standard deviation for each measurement.  Only  
+##those columns with "mean" or "std" are included as measures in the final dataframe and tidyMean dataset.
+##3.Uses descriptive activity names to name the activities in the data set.
 ##4.Appropriately labels the data set with descriptive variable names. 
-##5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+##5.From the data set in step 4, creates a second, independent tidy data set with the average of 
+##each variable for each activity and each subject.  Final dataset is called tidyMean.txt.
 
 ## load appropriate libraries
 library(dplyr)
@@ -49,9 +51,8 @@ vBetterColNames <- sub("-", "", vBetterColNames, fixed = FALSE)
 vBetterColNames <- sub(",", "_", vBetterColNames, fixed = FALSE)
 vBetterColNames <- sub("_", "", vBetterColNames, fixed = FALSE)
 
-## add more appropriate column names to train, test
-## rename coumns in activtity, subject, and activity labels data frames prior to cbinding the sbjects
-## this is easier because the column numbers are identical.
+## asign the syntactically correct column names to train, test
+## rename columns in the activtity, subject, and activity labels data frames prior to cbinding the objects
 
 colnames(df_train) <- vBetterColNames
 colnames(df_test) <- vBetterColNames
@@ -85,6 +86,3 @@ tidyMean <- arrange(dcast(tidyMelt, subject.id + activity.name + activity.id ~ v
 
 ## write table to txt format
 write.table(tidyMean, file = "tidyMean.txt", row.names = FALSE)
-##write.table(tidyMelt, file = "tidyMelt.txt", row.names = FALSE)
-##write.csv(df_Subset, file = "df_Subset.csv", row.names = FALSE)
- 
