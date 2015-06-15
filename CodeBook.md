@@ -79,11 +79,4 @@ Transformation Details
 - The final Tidy Dataset was created using the molten data 'tidyMelt'.  The mean was added for all the mean and std
 - measurement columns resulting in 180 rows and 89 columns.
 
-How to run the analysis
-
-1. Download the file run_analysis.R to a local directory on your PC.
-2. Open run_analysis.R in R Studio.
-3. Click on the link https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and download the data to a directory on your computer.
-4. Extract the contents of the zip file to your "C:\" root directory.  A new directory called "C:\UCI HAR Dataset" will be created.  This is the working directory in the run_analysis.R script.
-5. Run the script. This will source the various .txt files in the "C:\UCI HAR Dataset" directory, do the analysis and create a tidy dataset (named tidyMean.txt) in the working directory.
 
