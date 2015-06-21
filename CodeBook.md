@@ -18,41 +18,169 @@ The dataset includes the following files:
 
 
 •‘README.txt’
+
 •‘features_info.txt’: Shows information about the variables used on the feature vector.
+
 •‘features.txt’: List of all features.
+
 •‘activity_labels.txt’: Links the class labels with their activity name.
+
 •‘train/X_train.txt’: Training set. 7352 rows
+
  - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+
  - Triaxial Angular velocity from the gyroscope. 
+
  - A 561-feature vector with time and frequency domain variables. 
+
 •‘train/y_train.txt’: Training labels. 7352 rows
+
 •‘train/subject_train.txt': Subject identifier for each row - 7352 rows
+
 •‘test/X_test.txt’: Test set. 2947 rows
+
  - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+
  - Triaxial Angular velocity from the gyroscope. 
+
  - A 561-feature vector with time and frequency domain variables. 
+
 •‘test/y_test.txt’: Test labels. 2947 rows
+
 •‘test/subject_test.txt': Subject identifier for each row - 2947 rows
 The acceleration signal from the smartphone accelerometer X,Y,Z axis in standard gravity units ‘g’. Every row shows a 128 element vector. The same description applies for the ‘total_acc' and 'body_acc' and body_gyro' tables below. 
+
 •‘train/Inertial Signals/body_acc_x_train.txt’
+
 •‘train/Inertial Signals/body_acc_y_train.txt’
+
 •‘train/Inertial Signals/body_acc_z_train.txt’
+
 •‘train/Inertial Signals/body_gyro_x_train.txt’
+
 •‘train/Inertial Signals/body_gyro_y_train.txt’
+
 •‘train/Inertial Signals/body_gyro_z_train.txt’
+
 •‘train/Inertial Signals/total_acc_x_train.txt’
+
 •‘train/Inertial Signals/total_acc_y_train.txt’
+
 •‘train/Inertial Signals/total_acc_z_train.txt’
+
 The acceleration signal from the smartphone accelerometer X,Y,Z axis in standard gravity units ‘g’. Every row shows a 128 element vector. The same description applies for the ‘total_acc' and 'body_acc' and body_gyro' tables below. 
+
 •‘test/Inertial Signals/body_acc_x_test.txt’
+
 •‘test/Inertial Signals/body_acc_y_test.txt’
+
 •‘test/Inertial Signals/body_acc_z_test.txt’
+
 •‘test/Inertial Signals/body_gyro_x_test.txt’
+
 •‘test/Inertial Signals/body_gyro_y_test.txt’
+
 •‘test/Inertial Signals/body_gyro_z_test.txt’
+
 •‘test/Inertial Signals/total_acc_x_test.txt’
+
 •‘test/Inertial Signals/total_acc_y_test.txt’
+
 •‘test/Inertial Signals/total_acc_z_test.txt’
+
+•‘tidyMean.txt - mean of the mean and std variables taken from the merged train and test measurement datasets.
+- Variable Name
+- subject.id
+-activity.name
+-activity.id
+-tBodyAccstdX
+-tBodyAccstdY
+-tBodyAccstdZ
+-tGravityAccstdX
+-tGravityAccstdY
+-tGravityAccstdZ
+-tBodyAccJerkstdX
+-tBodyAccJerkstdY
+-tBodyAccJerkstdZ
+-tBodyGyrostdX
+-tBodyGyrostdY
+-tBodyGyrostdZ
+-tBodyGyroJerkstdX
+-tBodyGyroJerkstdY
+-tBodyGyroJerkstdZ
+-tBodyAccMagstd
+-tGravityAccMagstd
+-tBodyAccJerkMagstd
+-tBodyGyroMagstd
+-tBodyGyroJerkMagstd
+-fBodyAccstdX
+-fBodyAccstdY
+-fBodyAccstdZ
+-fBodyAccJerkstdX
+-fBodyAccJerkstdY
+-fBodyAccJerkstdZ
+-fBodyGyrostdX
+-fBodyGyrostdY
+-fBodyGyrostdZ
+-fBodyAccMagstd
+-fBodyBodyAccJerkMagstd
+-fBodyBodyGyroMagstd
+-fBodyBodyGyroJerkMagstd
+-tBodyAccmeanX
+-tBodyAccmeanY
+-tBodyAccmeanZ
+-tGravityAccmeanX
+-tGravityAccmeanY
+-tGravityAccmeanZ
+-tBodyAccJerkmeanX
+-tBodyAccJerkmeanY
+-tBodyAccJerkmeanZ
+-tBodyGyromeanX
+-tBodyGyromeanY
+-tBodyGyromeanZ
+-tBodyGyroJerkmeanX
+-tBodyGyroJerkmeanY
+-tBodyGyroJerkmeanZ
+-tBodyAccMagmean
+-tGravityAccMagmean
+-tBodyAccJerkMagmean
+-tBodyGyroMagmean
+-tBodyGyroJerkMagmean
+-fBodyAccmeanX
+-fBodyAccmeanY
+-fBodyAccmeanZ
+-fBodyAccmeanFreqX
+-fBodyAccmeanFreqY
+-fBodyAccmeanFreqZ
+-fBodyAccJerkmeanX
+-fBodyAccJerkmeanY
+-fBodyAccJerkmeanZ
+-fBodyAccJerkmeanFreqX
+-fBodyAccJerkmeanFreqY
+-fBodyAccJerkmeanFreqZ
+-fBodyGyromeanX
+-fBodyGyromeanY
+-fBodyGyromeanZ
+-fBodyGyromeanFreqX
+-fBodyGyromeanFreqY
+-fBodyGyromeanFreqZ
+-fBodyAccMagmean
+-fBodyAccMagmeanFreq
+-fBodyBodyAccJerkMagmean
+-fBodyBodyAccJerkMagmeanFreq
+-fBodyBodyGyroMagmean
+-fBodyBodyGyroMagmeanFreq
+-fBodyBodyGyroJerkMagmean
+-fBodyBodyGyroJerkMagmeanFreq
+-angletBodyAccMeangravity
+-angletBodyAccJerkMeangravityMean)
+-angletBodyGyroMeangravityMean
+-angletBodyGyroJerkMeangravityMean
+-angleXgravityMean
+-angleYgravityMean
+-angleZgravityMean
+
+
 
 Transformation Details
 
