@@ -88,7 +88,7 @@ The acceleration signal from the smartphone accelerometer X,Y,Z axis in standard
 
 •‘test/Inertial Signals/total_acc_z_test.txt’
 
-•‘tidyMean.txt - mean of the mean and std variables taken from the merged train and test measurement datasets.
+•‘tidyMean.txt' - mean of the mean and std variables taken from the merged train and test measurement datasets.
 - Variable Name
 - subject.id
 -activity.name
@@ -179,8 +179,6 @@ The acceleration signal from the smartphone accelerometer X,Y,Z axis in standard
 -angleXgravityMean
 -angleYgravityMean
 -angleZgravityMean
-
-
 
 Transformation Details
 
